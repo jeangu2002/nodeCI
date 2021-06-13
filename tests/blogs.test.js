@@ -87,6 +87,7 @@ describe('User is not logged in', async () => {
     test('Blog related actions are prohibited', async () => {
         await page.execRequests(actions);
     })
+
     /*test('user cannot create blog post', async () => {
         const result = await page.get('/api/blogs');
         expect(result).toEqual({ error: 'You must log in!' });
