@@ -10,6 +10,7 @@ class BlogList extends Component {
   }
 
   renderBlogs() {
+    console.log(this.props.blogs);
     return map(this.props.blogs, blog => {
       return (
         <div className="card darken-1 horizontal" key={blog._id}>
